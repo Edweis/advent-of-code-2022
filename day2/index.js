@@ -20,7 +20,7 @@ const result = input.split('\n').map(line => {
     let points = 0;
     if (ME_LOSE_VS[me] === you) points = 6
     if (ME_DRAW_VS[me] === you) points = 3
-    return meValue+points;
-}).reduce((acc, val)=>acc+val, 0) 
+    return meValue + points;
+}).reduce((acc, val) => acc + val, 0)
 
 console.log(result)
